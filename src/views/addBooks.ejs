@@ -95,7 +95,7 @@
                                 <div class="form-group">
                                     <label for="<%=info[i].id%>" class="col-sm-4 control-label text-right"><%=info[i].label%>:</label>
                                     <div class="col-sm-6">
-                                        <input type="<%=info[i].type%>" class="form-control" id="<%=info[i].id%>">
+                                        <input type="<%=info[i].type%>" class="form-control" id="<%=info[i].id%>" accept='<%=info[i].accept%>'>
                                         <span class="text"></span>
                                     </div>
                                 </div>
@@ -172,8 +172,7 @@
                 for( i=0;i<input.length;i++ ) {
                     if( input[i].value == '' ) {
                         input[i].style.border = '1px solid red';
-                        text[i].innerHTML = 'Cannot be empty!'
-                        $('input').tooltip('show');
+                        text[i].innerHTML = 'Cannot be empty!';
                         return false;
                     }
                     input[i].style.border = '';
@@ -187,7 +186,6 @@
                     text[i].innerHTML = '';
                 }
             }
-
         </script>
 
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
