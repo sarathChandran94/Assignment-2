@@ -22,7 +22,8 @@ let router = (nav) => {
         {
             label: 'Image',
             id: 'pic',
-            type: 'file'
+            type: 'file',
+            accept: 'image/*'
         }
     ]
 
